@@ -15,25 +15,12 @@
     }),
     e("body").scrollspy({
         target: "#mainNav",
-        offset: 10
+        offset: 75
     });
     var a = function() {
         0 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-scrolled") : e("#mainNav").removeClass("navbar-scrolled")
     };
     a(),
     e(window).scroll(a),
-    e("#portfolio").magnificPopup({
-        delegate: "a",
-        type: "image",
-        tLoading: "Loading image #%curr%...",
-        mainClass: "mfp-img-mobile",
-        gallery: {
-            enabled: !0,
-            navigateByImgClick: !0,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
-    })
+    e(window)
 }(jQuery);

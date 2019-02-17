@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<header class="bg-head">
+<header class="bg-head" id="home">
  <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
