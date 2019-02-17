@@ -2,4 +2,13 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+
+ <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-primary">{{ "Hello World!" | downcase }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium corporis ipsam cumque rerum quas quia neque, dolor vitae laboriosam.</p>
+        <i class="fas fa-thumbs-up fa-2x"></i>
+      </div>
+    </div>
+  </div>
