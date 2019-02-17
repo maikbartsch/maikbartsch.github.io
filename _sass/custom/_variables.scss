@@ -1,1 +1,6 @@
-$primary: #3a0; // super green
+$super-green: #3a0;
+
+$primary: $super-green; 
+$nav-tabs-link-active-color: $super-green;
+$navbar-light-color: #e2e2e2e2;
+$navbar-light-active-color: $super-green;

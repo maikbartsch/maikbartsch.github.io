@@ -1,35 +1,123 @@
 <!doctype html>
-<html>
-  <head>
+<html class="h-100">
+  
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-	<link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-	<nav>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+  <body class="h-100">
+	
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto my-2">
+              
+              
+              <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="/third.html">Third</a>
+            </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="/staff.html">Staff</a>
+            </li>
+              
+          </ul>
+    </div>
+    </div>
+    </nav>
   
-    <a href="/" class="current">Home</a>
-  
-    <a href="/about.html" >About</a>
-  
-    <a href="/third.html" >Third</a>
-  
-    <a href="/blog.html" >Blog</a>
-  
-    <a href="/staff.html" >Staff</a>
-  
-</nav>
-    <div class="container">
+  <header class="bg-head h-100">
+ <div class="container h-100">
     <div class="row">
-      <div class="col">
-        <h1 class="text-primary">hello world!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium corporis ipsam cumque rerum quas quia neque, dolor vitae laboriosam.</p>
-        <i class="fas fa-thumbs-up fa-2x"></i>
+        <div class="col align-self-center text-center">
+            <h1 class="text-primary">hello world!</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+        <h4 class="text-light">Jekyll fueled Bootratrap 4 page.</h4>
       </div>
     </div>
   </div>
+</header>
 
+<section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">We've got what you need!</h2>
+          <hr class="divider light my-4" />
+          <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">At Your Service</h2>
+      <hr class="divider my-4" />
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Sturdy Themes</h3>
+            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Up to Date</h3>
+            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Ready to Publish</h3>
+            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Made with Love</h3>
+            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<!-- JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/custom.js"></script>
   </body>
 </html>
