@@ -3,19 +3,18 @@ layout: default
 title: Home
 ---
 
-<header class="bg-head h-100">
+<header class="bg-head">
  <div class="container h-100">
-    <div class="row">
-        <div class="col align-self-center text-center">
-            <h1 class="text-primary">{{ "Hello World!" | downcase }}</h1>
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-primary">{{ "Hello World!" | downcase }}</h1>
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+           <h4 class="text-light">Jekyll fueled Bootratrap 4 page.</h4>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col text-center">
-        <h4 class="text-light">Jekyll fueled Bootratrap 4 page.</h4>
-      </div>
     </div>
-  </div>
 </header>
 
 <section class="page-section bg-primary" id="about">
