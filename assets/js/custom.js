@@ -15,7 +15,7 @@
     }),
     e("body").scrollspy({
         target: "#mainNav",
-        offset: 0
+        offset: 10
     });
     var a = function() {
         0 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-scrolled") : e("#mainNav").removeClass("navbar-scrolled")
