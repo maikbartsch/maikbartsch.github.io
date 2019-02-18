@@ -9,7 +9,9 @@ $('a.js-scroll-trigger[href^="#"]:not([href="#"])').on('click', function(event) 
     }
   
     var navOffset = 72;
-    if (Math.max(0, element.offset().top - navOffset) != document.documentElement.scrollTop) {
+    var currentYOffset = Math.max(document.documentElement.scrollTop, window.pageYOffset);
+
+    if (Math.max(0, element.offset().top - navOffset) != currentYOffset) {
         element.data("transitioning", true)
     return $('html, body').animate({
       scrollTop: $(this.hash).offset().top - navOffset
