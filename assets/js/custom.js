@@ -1,15 +1,21 @@
 $('a.js-scroll-trigger[href^="#"]:not([href="#"])').on('click', function(event) {
     var target = this.hash;
     var element = $(this.hash)
+
     event.preventDefault();
+  
+    if (element.data("transitioning")) {
+        return
+    }
   
     var navOffset = document.getElementById('mainNav').offsetHeight;
     if (Math.max(0, element.offset().top - navOffset) != document.documentElement.scrollTop) {
-        element.data()
+        element.data("transitioning", true)
     return $('html, body').animate({
       scrollTop: $(this.hash).offset().top - navOffset
     }, 1e3,"easeInOutExpo", function(completion) {
-        return window.history.pushState(null, null, target);
+        element.data("transitioning", false)
+        /*return window.history.pushState(null, null, target);*/
       });
 }
   });

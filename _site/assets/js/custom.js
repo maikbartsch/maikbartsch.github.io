@@ -3,7 +3,7 @@ $('a.js-scroll-trigger[href^="#"]:not([href="#"])').on('click', function(event) 
     var element = $(this.hash)
 
     event.preventDefault();
-
+  
     if (element.data("transitioning")) {
         return
     }
