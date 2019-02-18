@@ -8,7 +8,7 @@ $('a.js-scroll-trigger[href^="#"]:not([href="#"])').on('click', function(event) 
         return
     }
   
-    var navOffset = document.getElementById('mainNav').offsetHeight;
+    var navOffset = 72;
     if (Math.max(0, element.offset().top - navOffset) != document.documentElement.scrollTop) {
         element.data("transitioning", true)
     return $('html, body').animate({
