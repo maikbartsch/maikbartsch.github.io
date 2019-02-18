@@ -7621,7 +7621,7 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #3a0 !important; }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -7663,3 +7663,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   position: relative; }
+
+.page-section {
+  padding: 8rem 0; }

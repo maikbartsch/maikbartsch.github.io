@@ -38,7 +38,7 @@
   color: $super-green!important
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mainNav {
       -webkit-box-shadow:none;
       box-shadow: none;
@@ -95,4 +95,8 @@
 
 body {
   position: relative;
+}
+
+.page-section {
+  padding: 8rem 0;
 }
